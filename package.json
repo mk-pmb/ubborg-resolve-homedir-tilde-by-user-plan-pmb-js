@@ -1,0 +1,34 @@
+{ "name": "ubborg-resolve-homedir-tilde-by-user-plan-pmb",
+  "version": "0.1.0",
+  "description": "Resolve paths that start with `~` to be within some planned user's planned home directory.",
+  "keywords": [],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/ubborg-resolve-homedir-tilde-by-user-plan-pmb-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/ubborg-resolve-homedir-tilde-by-user-plan-pmb-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/ubborg-resolve-homedir-tilde-by-user-plan-pmb-js/issues"
+  },
+  "contributors": [],
+
+  "private": false, "license": "ISC",
+
+  "main": "reso.mjs",
+  "scripts": { "test": "nodejs test/all.js" },
+  "directories": { "test": "test" },
+
+  "dependencies": {
+    "split-string-or-buffer-once-pmb": "^1.0.0",
+    "typechecks-pmb": "^0.200620.0"
+  },
+  "browser": {
+  },
+  "devDependencies": {
+  },
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
