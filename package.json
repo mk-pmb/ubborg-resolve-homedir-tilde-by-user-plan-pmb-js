@@ -1,5 +1,5 @@
 { "name": "ubborg-resolve-homedir-tilde-by-user-plan-pmb",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Resolve paths that start with `~` to be within some planned user's planned home directory.",
   "keywords": [],
 

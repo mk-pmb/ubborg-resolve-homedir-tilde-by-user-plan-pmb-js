@@ -4,7 +4,7 @@ import mustBe from 'typechecks-pmb/must-be';
 import splitOnce from 'split-string-or-buffer-once-pmb';
 import getOwn from 'getown';
 
-const hdResType = 'osUser';
+const hdResType = 'osUserLogin';
 const hdProp = 'homeDirPath';
 
 async function resolveHomeDirTildeByUserPlan(spawnCtx, path, defaultUserName) {
@@ -23,6 +23,7 @@ async function resolveHomeDirTildeByUserPlan(spawnCtx, path, defaultUserName) {
   await hduPlan.hatchedPr;
   const facts = await hduPlan.toFactsDict();
   const hdPath = facts[hdProp];
+  mustBe.nest('home directory path for ' + String(hduPlan), hdPath);
   const reso = (hdPath + (subPath === undefined ? '' : '/') + (subPath || ''));
   return reso;
 }
